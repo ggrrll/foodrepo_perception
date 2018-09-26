@@ -71,7 +71,7 @@
           <!-- <input type="radio" name="already" value="yes">  <br>Yes</br>
           <input type="radio" name="already" value="no"> <br>No</br> -->
 
-          <h3>What is your sex?</h3>
+          <h3>What do you think is your sex?</h3>
 
           <form action="/action_page.php">
             <label for="male">Male</label>
@@ -87,7 +87,7 @@
           <input type="radio" name="gender" value="female"> Female -->
           <!-- <input type="radio" name="gender" value="other"> Other<br> -->
 
-          <h3>What is your height?</h3>
+          <h3>What do you think is your height?</h3>
 
             <div data-role="main" class="ui-content">
               <form method="post" action="/action_page_post.php">
@@ -96,7 +96,7 @@
               </form>
             </div>
 
-          <h3>What is your weight?</h3>
+          <h3>What do you think is your weight?</h3>
 
             <div data-role="main" class="ui-content">
               <form method="post" action="/action_page_post.php">
@@ -120,7 +120,14 @@
 
       <div class="" style="float:left">
 
-        <h3>What is the percentage of <b>fats</b> (%) ?</h3>
+        <!-- BUTTONS!!! -->
+        <!-- <a href="#" class="previous">&laquo; Previous</a>
+        <a href="#" class="next">Next &raquo;</a> -->
+
+
+        <h3>What do you think is the percentage of:</h3>
+
+          <h4 align="center"><b>fats (%)?</b></h4>
 
           <div data-role="main" class="ui-content">
             <form method="post" action="/action_page_post.php">
@@ -129,7 +136,8 @@
             </form>
           </div>
 
-        <h3>What is the percentage of total <b>carbohydrates</b> (%) ?</h3>
+          <h4 align="center"><b>carbohydrates (%)?</b></h4>
+          <!-- <h3>What do you think is the percentage of <b>carbohydrates</b> (%) ?</h3> -->
 
           <div data-role="main" class="ui-content">
             <form method="post" action="/action_page_post.php">
@@ -139,7 +147,26 @@
           </div>
 
 
-        <h3>What is the percentage of <b>sugars</b> (%) ?</h3>
+        <!-- <h3>What do you think is the percentage of <b>sugars</b> (%) ?</h3> -->
+          <h4 align="center"><b>sugars (%)?</b></h4>
+
+          <div data-role="main" class="ui-content">
+            <form method="post" action="/action_page_post.php">
+              <!-- <label for="points">%:</label> -->
+              <input type="range" name="points" id="points" value="50" min="0" max="100" data-show-value="true">
+            </form>
+          </div>
+
+          <h4 align="center"><b>proteins (%)?</b></h4>
+
+          <div data-role="main" class="ui-content">
+            <form method="post" action="/action_page_post.php">
+              <!-- <label for="points">%:</label> -->
+              <input type="range" name="points" id="points" value="50" min="0" max="100" data-show-value="true">
+            </form>
+          </div>
+
+          <h4 align="center"><b>fibers (%)?</b></h4>
 
           <div data-role="main" class="ui-content">
             <form method="post" action="/action_page_post.php">
@@ -148,6 +175,7 @@
               <input type="submit" data-inline="true" value="Submit">
             </form>
           </div>
+
 
       </div>
 
